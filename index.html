@@ -3,14 +3,34 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Angular Contacts</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css"></link>
+  <title></title>
 </head>
 
-<body>
-  <h1>Hello</hi>
 
+<body ng-app="ContactApp">
+  <div ng-include="'./partials/navbar.html'"></div>
+  <div class='col-xs-8 col-xs-offset-2' ng-view>
+
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+  <script type="text/javascript" src="./lib/node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="./lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./lib/node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" src="./lib/node_modules/angular-animate/angular-animate.min.js"></script>
+  <script type="text/javascript" src="./lib/node_modules/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="./lib/node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+  <script type="text/javascript" src="./javascripts/app.js"></script>
+
+  <script type="text/javascript" src="./javascripts/AppConstants.js"></script>
+  <script type="text/javascript" src="./javascripts/AppConfig.js"></script>
+
+  <script type="text/javascript" src="./javascripts/controllers/FavoritesCtrl.js"></script>
+  <script type="text/javascript" src="./javascripts/controllers/LoginCtrl.js"></script>
+  <script type="text/javascript" src="./javascripts/controllers/NewCtrl.js"></script>
+  <script type="text/javascript" src="./javascripts/controllers/ViewCtrl.js"></script>
 </body>
 
 </html>
