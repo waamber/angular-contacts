@@ -7,15 +7,15 @@ app.run(function (FIREBASE_CONFIG) {
 //cannot run own code in app.config
 app.config(function ($routeProvider) {
   $routeProvider
-    .when("/favorites", {
+    .when("/contacts/favorites", {
       templateUrl: 'partials/favorites.html',
       controller: 'FavoritesCtrl'
     })
-    .when("/view", {
+    .when("/contacts/view", {
       templateUrl: 'partials/view.html',
       controller: 'ViewCtrl'
     })
-    .when("/new", {
+    .when("/contacts/new", {
       templateUrl: 'partials/new.html',
       controller: 'NewCtrl'
     })
