@@ -1,94 +1,96 @@
 {
   "contacts": [
     {
-      "firstName": "Amber",
-      "lastName": "Stuart",
-      "address": "500 Washington Way, Nashville, TN",
-      "phoneNumber": "555-555-5555",
-      "email": "wammber15@gmail.com",
-      "birthday": "7/26/1990",
-      "website": "http://www.therealamberstuart.me"
-    },
-    {
-      "firstName": "Puggy",
-      "lastName": "Stuart",
-      "address": "77 Dog Park Ln, Nashville, TN",
-      "phoneNumber": "777-777-7777",
-      "email": "puggy.doge@bark.edu",
-      "birthday": "6/16/2013",
-      "website": "http://www.puggyisagoodgirl.org"
-    },
-    {
-      "firstName": "Hillary",
-      "lastName": "Clinton",
-      "address": "6432 Bill Clinton Blvd, Spokane, WA",
-      "phoneNumber": "321-765-6976",
-      "email": "leavemealonetrump2017@gmail.com",
-      "birthday": "10/26/1947",
-      "website": "http://www.hillaryclinton.com"
-    },
-    {
-      "firstName": "Gordon",
-      "lastName": "Ramsay",
-      "address": "5435 Cooking Ct, Johnstone, United Kingdom",
-      "phoneNumber": "554-754-0685",
-      "email": "therealgordonramsay@hotmail.com",
-      "birthday": "11/8/1966",
-      "website": "http://www.gordonramsay.com"
-    },
-    {
-      "firstName": "Larry",
-      "lastName": "David",
-      "address": "44 Rich Folk Circle, Hollywood, CA",
-      "phoneNumber": "432-444-3265",
-      "email": "larryisamoron@aol.com",
-      "birthday": "7/2/1947",
-      "website": "https://en.wikipedia.org/wiki/Larry_David"
-    },
-    {
-      "firstName": "Billy Ray",
-      "lastName": "Cyrus",
-      "address": "325 Achy Breaky Dr, Springfield, IN",
-      "phoneNumber": "533-759-8574",
-      "email": "iambillyray@bellsouth.com",
-      "birthday": "8/25/1961",
-      "website": "http://www.billyraycyrus.com"
-    },
-    {
-      "firstName": "Colin",
-      "lastName": "Kaepernick",
-      "address": "546 I Need A Job St. Apt. J, San Francisco, CA",
-      "phoneNumber": "574-684-5784",
-      "email": "ihavebighair@outlook.com",
-      "birthday": "11/3/1987",
-      "website": "http://kaepernick7.com/"
-    },
-    {
-      "firstName": "Ted",
-      "lastName": "Bundy",
-      "address": "4322 I Won't Kill You Pkwy, Burlington, VT",
-      "phoneNumber": "666-666-6666",
-      "email": "iwontkillyouipromise@jk.com",
-      "birthday": "11/24/1946",
-      "website": "https://en.wikipedia.org/wiki/Ted_Bundy"
-    },
-    {
-      "firstName": "Jerry",
-      "lastName": "Seinfeld",
-      "address": "555 5th Ave S, Brooklyn, NY",
-      "phoneNumber": "543-796-0786",
-      "email": "therealjerry@jerry.jer",
-      "birthday": "4/26/1954",
-      "website": "http://jerryseinfeld.com/"
-    },
-    {
-      "firstName": "Jake",
-      "lastName": "Gyllenhaal",
-      "address": "500 Washington Way, Nasville, TN",
-      "phoneNumber": "574-869-4849",
-      "email": "iloveyousomuchjake@hottie.edu",
-      "birthday": "12/19/1980",
-      "website": "https://en.wikipedia.org/wiki/Jake_Gyllenhaal"
+      "contact0": {
+        "firstName": "Amber",
+        "lastName": "Stuart",
+        "address": "500 Washington Way, Nashville, TN",
+        "phoneNumber": "555-555-5555",
+        "email": "wammber15@gmail.com",
+        "birthday": "7/26/1990",
+        "website": "http://www.therealamberstuart.me"
+      },
+      "contact1": {
+        "firstName": "Puggy",
+        "lastName": "Stuart",
+        "address": "77 Dog Park Ln, Nashville, TN",
+        "phoneNumber": "777-777-7777",
+        "email": "puggy.doge@bark.edu",
+        "birthday": "6/16/2013",
+        "website": "http://www.puggyisagoodgirl.org"
+      },
+      "contact2": {
+        "firstName": "Hillary",
+        "lastName": "Clinton",
+        "address": "6432 Bill Clinton Blvd, Spokane, WA",
+        "phoneNumber": "321-765-6976",
+        "email": "leavemealonetrump2017@gmail.com",
+        "birthday": "10/26/1947",
+        "website": "http://www.hillaryclinton.com"
+      },
+      "contact3": {
+        "firstName": "Gordon",
+        "lastName": "Ramsay",
+        "address": "5435 Cooking Ct, Johnstone, United Kingdom",
+        "phoneNumber": "554-754-0685",
+        "email": "therealgordonramsay@hotmail.com",
+        "birthday": "11/8/1966",
+        "website": "http://www.gordonramsay.com"
+      },
+      "contact4": {
+        "firstName": "Larry",
+        "lastName": "David",
+        "address": "44 Rich Folk Circle, Hollywood, CA",
+        "phoneNumber": "432-444-3265",
+        "email": "larryisamoron@aol.com",
+        "birthday": "7/2/1947",
+        "website": "https://en.wikipedia.org/wiki/Larry_David"
+      },
+      "contact5": {
+        "firstName": "Billy Ray",
+        "lastName": "Cyrus",
+        "address": "325 Achy Breaky Dr, Springfield, IN",
+        "phoneNumber": "533-759-8574",
+        "email": "iambillyray@bellsouth.com",
+        "birthday": "8/25/1961",
+        "website": "http://www.billyraycyrus.com"
+      },
+      "contact6": {
+        "firstName": "Colin",
+        "lastName": "Kaepernick",
+        "address": "546 I Need A Job St. Apt. J, San Francisco, CA",
+        "phoneNumber": "574-684-5784",
+        "email": "ihavebighair@outlook.com",
+        "birthday": "11/3/1987",
+        "website": "http://kaepernick7.com/"
+      },
+      "contact7": {
+        "firstName": "Ted",
+        "lastName": "Bundy",
+        "address": "4322 I Won't Kill You Pkwy, Burlington, VT",
+        "phoneNumber": "666-666-6666",
+        "email": "iwontkillyouipromise@jk.com",
+        "birthday": "11/24/1946",
+        "website": "https://en.wikipedia.org/wiki/Ted_Bundy"
+      },
+      "contact8": {
+        "firstName": "Jerry",
+        "lastName": "Seinfeld",
+        "address": "555 5th Ave S, Brooklyn, NY",
+        "phoneNumber": "543-796-0786",
+        "email": "therealjerry@jerry.jer",
+        "birthday": "4/26/1954",
+        "website": "http://jerryseinfeld.com/"
+      },
+      "contact9": {
+        "firstName": "Jake",
+        "lastName": "Gyllenhaal",
+        "address": "500 Washington Way, Nasville, TN",
+        "phoneNumber": "574-869-4849",
+        "email": "iloveyousomuchjake@hottie.edu",
+        "birthday": "12/19/1980",
+        "website": "https://en.wikipedia.org/wiki/Jake_Gyllenhaal"
+      }
     }
   ]
 }
