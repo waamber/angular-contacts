@@ -8,7 +8,8 @@
         "phoneNumber": "555-555-5555",
         "email": "wammber15@gmail.com",
         "birthday": "7/26/1990",
-        "website": "http://www.therealamberstuart.me"
+        "website": "http://www.therealamberstuart.me",
+        "uid": ""
       },
       "contact1": {
         "firstName": "Puggy",
@@ -17,7 +18,8 @@
         "phoneNumber": "777-777-7777",
         "email": "puggy.doge@bark.edu",
         "birthday": "6/16/2013",
-        "website": "http://www.puggyisagoodgirl.org"
+        "website": "http://www.puggyisagoodgirl.org",
+        "uid": ""
       },
       "contact2": {
         "firstName": "Hillary",
@@ -26,7 +28,8 @@
         "phoneNumber": "321-765-6976",
         "email": "leavemealonetrump2017@gmail.com",
         "birthday": "10/26/1947",
-        "website": "http://www.hillaryclinton.com"
+        "website": "http://www.hillaryclinton.com",
+        "uid": ""
       },
       "contact3": {
         "firstName": "Gordon",
@@ -35,7 +38,8 @@
         "phoneNumber": "554-754-0685",
         "email": "therealgordonramsay@hotmail.com",
         "birthday": "11/8/1966",
-        "website": "http://www.gordonramsay.com"
+        "website": "http://www.gordonramsay.com",
+        "uid": ""
       },
       "contact4": {
         "firstName": "Larry",
@@ -44,7 +48,8 @@
         "phoneNumber": "432-444-3265",
         "email": "larryisamoron@aol.com",
         "birthday": "7/2/1947",
-        "website": "https://en.wikipedia.org/wiki/Larry_David"
+        "website": "https://en.wikipedia.org/wiki/Larry_David",
+        "uid": ""
       },
       "contact5": {
         "firstName": "Billy Ray",
@@ -53,7 +58,8 @@
         "phoneNumber": "533-759-8574",
         "email": "iambillyray@bellsouth.com",
         "birthday": "8/25/1961",
-        "website": "http://www.billyraycyrus.com"
+        "website": "http://www.billyraycyrus.com",
+        "uid": ""
       },
       "contact6": {
         "firstName": "Colin",
@@ -62,7 +68,8 @@
         "phoneNumber": "574-684-5784",
         "email": "ihavebighair@outlook.com",
         "birthday": "11/3/1987",
-        "website": "http://kaepernick7.com/"
+        "website": "http://kaepernick7.com/",
+        "uid": ""
       },
       "contact7": {
         "firstName": "Ted",
@@ -71,7 +78,8 @@
         "phoneNumber": "666-666-6666",
         "email": "iwontkillyouipromise@jk.com",
         "birthday": "11/24/1946",
-        "website": "https://en.wikipedia.org/wiki/Ted_Bundy"
+        "website": "https://en.wikipedia.org/wiki/Ted_Bundy",
+        "uid": ""
       },
       "contact8": {
         "firstName": "Jerry",
@@ -80,7 +88,8 @@
         "phoneNumber": "543-796-0786",
         "email": "therealjerry@jerry.jer",
         "birthday": "4/26/1954",
-        "website": "http://jerryseinfeld.com/"
+        "website": "http://jerryseinfeld.com/",
+        "uid": ""
       },
       "contact9": {
         "firstName": "Jake",
@@ -89,7 +98,8 @@
         "phoneNumber": "574-869-4849",
         "email": "iloveyousomuchjake@hottie.edu",
         "birthday": "12/19/1980",
-        "website": "https://en.wikipedia.org/wiki/Jake_Gyllenhaal"
+        "website": "https://en.wikipedia.org/wiki/Jake_Gyllenhaal",
+        "uid": ""
       }
     }
   ]
