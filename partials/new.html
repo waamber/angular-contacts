@@ -1,34 +1,43 @@
 <div id='new'>
   <h1 class='text-center'>New Contact</h1>
-  <form>
+
+  <form name="newContactForm">
     <div class="form-group">
       <label for="firstName">First Name</label>
-      <input type="firstName" class="form-control" id="firstNameInput" placeholder="">
+      <input type="name" class="form-control" id="firstNameInput" ng-model="user.firstName" ng-required="true">
     </div>
+
     <div class="form-group">
       <label for="lastName">Last Name</label>
-      <input type="lastName" class="form-control" id="lastNameInput" placeholder="">
+      <input type="name" class="form-control" id="lastNameInput" ng-model="user.lastName" ng-required="true">
     </div>
-    <div class="form-group">
+
+    <div class="form-group" ng-validate="required">
       <label for="address">Address</label>
-      <input type="address" class="form-control" id="addressInput" placeholder="Ex: 583 Jones St. Atlanta, GA ">
+      <input type="address" class="form-control" id="addressInput" placeholder="Ex: 583 Jones St. Atlanta, GA" ng-model="user.address"
+        ng-required="true">
     </div>
-    <div class="form-group">
+
+    <div class="form-group" ng-validate="required">
       <label for="phone">Phone</label>
-      <input type="phone" class="form-control" id="phoneInput" placeholder="###-###-####">
+      <input type="phone" class="form-control" id="phoneInput" placeholder="###-###-####" ng-model="user.phoneNumber" ng-required="true">
     </div>
+
     <div class="form-group">
       <label for="email">Email</label>
-      <input type="email" class="form-control" id="emailInput" placeholder="email@email.com">
+      <input type="email" class="form-control" id="emailInput" placeholder="email@email.com" ng-model="user.email" ng-required="true">
     </div>
-    <div class="form-group">
+
+    <div class=" form-group">
       <label for="birthday">Birthday</label>
-      <input type="birthday" class="form-control" id="birthdayInput" placeholder="##/##/####">
+      <input type="birthday" class="form-control" id="birthdayInput" placeholder="##/##/####" ng-model="user.birthday" ng-required="true">
     </div>
+
     <div class="form-group">
       <label for="website">Website</label>
-      <input type="website" class="form-control" id="websiteInput" placeholder="">
+      <input type="website" class="form-control" id="websiteInput" ng-model="user.website" ng-required="true">
     </div>
-    <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+    <button type="submit " class="btn btn-primary btn-lg btn-block " ng-click="submit()" ng-disabled="newContactForm.$invalid">Submit</button>
   </form>
+
 </div>
