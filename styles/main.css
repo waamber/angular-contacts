@@ -1,9 +1,6 @@
 .contact-card {
   border: 2px solid lightgrey;
   border-radius: 10px;
-<<<<<<< Updated upstream
-  height: 200px; }
-=======
   height: 225px;
   position: relative; }
   .contact-card .caption {
@@ -31,4 +28,3 @@
   .detailBtnGroup .editBtn {
     margin-top: 5%;
     margin-bottom: 2%; }
->>>>>>> Stashed changes

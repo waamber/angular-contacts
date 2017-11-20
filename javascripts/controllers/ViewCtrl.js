@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller("ViewCtrl", function ($rootScope, $scope, ContactService) {
+app.controller("ViewCtrl", function ($location, $rootScope, $scope, ContactService) {
 
   $scope.contacts = [];
 
@@ -22,8 +22,6 @@ app.controller("ViewCtrl", function ($rootScope, $scope, ContactService) {
     });
   };
 
-<<<<<<< Updated upstream
-=======
   $scope.switchToFavorite = (contact) => {
     contact.favorite = true;
     let updatedContact = ContactService.createContactObject(contact);
@@ -31,6 +29,16 @@ app.controller("ViewCtrl", function ($rootScope, $scope, ContactService) {
       getContacts();
     }).catch((error) => {
       console.log("Error in switchWatched", error);
+    });
+  };
+
+  $scope.switchToUnfavorite = (contact) => {
+    contact.favorite = false;
+    let updatedContact = ContactService.createContactObject(contact);
+    ContactService.updateContact(updatedContact, contact.id).then((results) => {
+      getContacts();
+    }).catch((error) => {
+      console.log("Error in switchToUnfavorite", error);
     });
   };
 
@@ -42,5 +50,4 @@ app.controller("ViewCtrl", function ($rootScope, $scope, ContactService) {
     $location.path(`/contacts/details/${contactId}`);
   };
 
->>>>>>> Stashed changes
 });

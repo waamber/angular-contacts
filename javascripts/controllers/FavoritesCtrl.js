@@ -1,10 +1,5 @@
 'use strict';
 
-<<<<<<< Updated upstream
-app.controller("FavoritesCtrl", function ($scope) {
-  $scope.controller = "FavoritesCtrl";
-  console.log("FavoritesCtrl");
-=======
 app.controller("FavoritesCtrl", function ($location, $rootScope, $scope, ContactService) {
 
   const getContacts = () => {
@@ -43,5 +38,4 @@ app.controller("FavoritesCtrl", function ($location, $rootScope, $scope, Contact
     $location.path(`/contacts/edit/${contactId}`);
   };
 
->>>>>>> Stashed changes
 });
