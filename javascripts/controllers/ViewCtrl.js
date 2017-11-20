@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller("ViewCtrl", function ($rootScope, $scope, ContactService) {
+app.controller("ViewCtrl", function ($location, $rootScope, $scope, ContactService) {
 
   $scope.contacts = [];
 
@@ -19,6 +19,29 @@ app.controller("ViewCtrl", function ($rootScope, $scope, ContactService) {
       getContacts();
     }).catch((error) => {
       console.log("Error in deleteContacts", error);
+    });
+  };
+
+
+  // $scope.savedFavorite = (contact) => {
+  //   contact.uid = $rootScope.uid;
+  //   contact.favorite = true;
+  //   let favoriteContact = ContactService.createContactObject(contact);
+  //   ContactService.postNewContact(favoriteContact).then(() => {
+  //     getContacts();
+  //     $location.path('/contacts/favorites');
+  //   }).catch((error) => {
+  //     console.log("Error in savedFavorite", error);
+  //   });
+  // }; //where does this function go??
+
+  $scope.switchToFavorite = (contact) => {
+    contact.favorite = true;
+    let updatedContact = ContactService.createContactObject(contact);
+    ContactService.updateContact(updatedContact, contact.id).then((results) => {
+      getContacts();
+    }).catch((error) => {
+      console.log("Error in switchWatched", error);
     });
   };
 
