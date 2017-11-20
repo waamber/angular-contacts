@@ -2,7 +2,10 @@
 
   <div id="viewContacts">
     <div ng-repeat="contact in contacts" class="col-sm-6 col-md-4 contact-card">
+<<<<<<< Updated upstream
       <button class="btn btn-danger delete" ng-click="deleteContact(contact.id)">X</button>
+=======
+>>>>>>> Stashed changes
       <div class='caption'>
         <h3 class="name">{{contact.firstName}} {{contact.lastName}}</h3>
         <p class="phone">{{contact.phone}}</p>
@@ -10,6 +13,17 @@
         <p class="address">{{contact.address}}</p>
         <p class="website">{{contact.website}}</p>
       </div>
+<<<<<<< Updated upstream
+=======
+      <div class="btnGroup">
+        <button class="btn btn-success detail" ng-click="contactDetail(contact.id)"><i class="fa fa-search"></i></button>
+        <button class="btn btn-warning favorite" ng-click="editContact(contact.id)"><i class="fa fa-pencil" aria-hidden="true"></i>
+</button>
+        <button ng-if="!contact.favorite" class="btn btn-info favorite" ng-click="switchToFavorite(contact)"><i class="fa fa-star-o"></i></button>
+        <button ng-if="contact.favorite" class="btn btn-info favorite" ng-click="switchToUnfavorite(contact)"><i class="fa fa-star"></i></button>
+        <button class="btn btn-danger delete" ng-click="deleteContact(contact.id)"><i class="fa fa-trash-o"></i></button>
+      </div>
+>>>>>>> Stashed changes
     </div>
   </div>
 

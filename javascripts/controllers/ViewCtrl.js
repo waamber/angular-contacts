@@ -22,4 +22,25 @@ app.controller("ViewCtrl", function ($rootScope, $scope, ContactService) {
     });
   };
 
+<<<<<<< Updated upstream
+=======
+  $scope.switchToFavorite = (contact) => {
+    contact.favorite = true;
+    let updatedContact = ContactService.createContactObject(contact);
+    ContactService.updateContact(updatedContact, contact.id).then((results) => {
+      getContacts();
+    }).catch((error) => {
+      console.log("Error in switchWatched", error);
+    });
+  };
+
+  $scope.editContact = (contactId) => {
+    $location.path(`/contacts/edit/${contactId}`);
+  };
+
+  $scope.contactDetail = (contactId) => {
+    $location.path(`/contacts/details/${contactId}`);
+  };
+
+>>>>>>> Stashed changes
 });

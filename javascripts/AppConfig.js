@@ -29,19 +29,32 @@ app.config(function ($routeProvider) {
   $routeProvider
     .when("/contacts/favorites", {
       templateUrl: 'partials/favorites.html',
-      controller: 'FavoritesCtrl'
+      controller: 'FavoritesCtrl',
+      resolve: { isAuth }
     })
     .when("/contacts/view", {
       templateUrl: 'partials/view.html',
-      controller: 'ViewCtrl'
+      controller: 'ViewCtrl',
+      resolve: { isAuth }
     })
     .when("/contacts/new", {
       templateUrl: 'partials/new.html',
-      controller: 'NewCtrl'
+      controller: 'NewCtrl',
+      resolve: { isAuth }
     })
     .when("/login", {
       templateUrl: 'partials/login.html',
       controller: 'LoginCtrl'
+    })
+    .when("/contacts/edit/:id", {
+      templateUrl: 'partials/edit.html',
+      controller: 'EditCtrl',
+      resolve: { isAuth }
+    })
+    .when("/contacts/details/:id", {
+      templateUrl: 'partials/details.html',
+      controller: 'DetailCtrl',
+      resolve: { isAuth }
     })
     .otherwise("/login");
 });

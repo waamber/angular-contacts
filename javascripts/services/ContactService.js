@@ -26,5 +26,31 @@ app.service("ContactService", function ($http, $q, FIREBASE_CONFIG) {
     return $http.delete(`${FIREBASE_CONFIG.databaseURL}/contacts/${contactId}.json`);
   };
 
+<<<<<<< Updated upstream
   return { getSavedContacts, deleteContact, postNewContact };
+=======
+  const updateContact = (contact, contactId) => {
+    return $http.put(`${FIREBASE_CONFIG.databaseURL}/contacts/${contactId}.json`, JSON.stringify(contact));
+  };
+
+  const createContactObject = (contact) => {
+    return {
+      "firstName": contact.firstName,
+      "lastName": contact.lastName,
+      "address": contact.address,
+      "phoneNumber": contact.phoneNumber,
+      "email": contact.email,
+      "birthday": contact.birthday,
+      "favorite": contact.favorite,
+      "website": contact.website,
+      "uid": contact.uid
+    };
+  };
+
+  const getSingleContact = (contactId) => {
+    return $http.get(`${FIREBASE_CONFIG.databaseURL}/contacts/${contactId}.json`);
+  };
+
+  return { createContactObject, getSingleContact, getFavoriteContacts, getSavedContacts, deleteContact, postNewContact, updateContact };
+>>>>>>> Stashed changes
 });

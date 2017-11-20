@@ -1,5 +1,48 @@
 .contact-card {
+<<<<<<< Updated upstream
   border: 2px solid lightgrey;
   border-radius: 10px;
   height: 200px;
 }
+=======
+   border: 2px solid lightgrey;
+   border-radius: 10px;
+   height: 225px;
+   position: relative;
+
+   .caption {
+     margin: 5px;
+   }
+
+   .name {
+     margin-bottom: 5px;
+   }
+}
+
+#details {
+  margin-left: 25%;
+  margin-top: 5%;
+}
+
+.detail-card {
+    margin: 25px;
+    border: 2px solid darkgrey;
+    border-radius: 10px;
+}
+
+.btnGroup {
+  position: absolute;
+  bottom: 0;
+  margin: 5px;
+  margin-left: 60px;
+}
+
+.detailBtnGroup {
+  padding-left: 15%;
+
+  .editBtn {
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+}
+>>>>>>> Stashed changes

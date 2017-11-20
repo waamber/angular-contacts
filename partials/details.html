@@ -1,0 +1,19 @@
+<div class="col-xs-6 detail-card" id="details">
+  <div class="col-xs-8">
+    <h3>{{contact.firstName}} {{contact.lastName}}</h3>
+  </div>
+  <div>
+    <div class="col-xs-8">
+      <p><i class="fa fa-birthday-cake" aria-hidden="true"></i> {{contact.birthday}}</p>
+      <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{contact.address}}</p>
+      <p><i class="fa fa-envelope" aria-hidden="true"></i> {{contact.email}}</p>
+      <p><i class="fa fa-phone" aria-hidden="true"></i> {{contact.phoneNumber}}</p>
+      <p><i class="fa fa-laptop" aria-hidden="true"></i> {{contact.website}}</p>
+    </div>
+    <div class="col-xs-4 detailBtnGroup">
+      <button class="btn btn-warning favorite btn-lg editBtn" ng-click="editContact(contact.id)"><i class="fa fa-pencil" aria-hidden="true"></i></button><br>
+      <button ng-if="!contact.favorite" class="btn btn-info favorite btn-lg" ng-click="switchToFavorite(contact)"><i class="fa fa-star-o"></i></button>
+      <button ng-if="contact.favorite" class="btn btn-info unfavorite btn-lg" ng-click="switchToUnfavorite(contact)"><i class="fa fa-star"></i></button>
+    </div>
+  </div>
+</div>
