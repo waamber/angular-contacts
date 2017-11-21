@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller("ViewCtrl", function ($location, $rootScope, $scope, ContactService) {
+app.controller("ViewCtrl", function ($location, $rootScope, $scope, $window, ContactService) {
 
   $scope.contacts = [];
 
@@ -19,6 +19,16 @@ app.controller("ViewCtrl", function ($location, $rootScope, $scope, ContactServi
       getContacts();
     }).catch((error) => {
       console.log("Error in deleteContacts", error);
+    });
+  };
+
+
+  $scope.deleteAll = () => {
+    ContactService.deleteAllContacts().then(() => {
+      getContacts();
+      $window.alert("YOU HAVE NO FRIENDS");
+    }).catch((error) => {
+      console.log("Error in deleteAll", error);
     });
   };
 

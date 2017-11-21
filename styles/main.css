@@ -1,3 +1,6 @@
+.searchbar {
+  margin-bottom: 15px; }
+
 .contact-card {
   border: 2px solid lightgrey;
   border-radius: 10px;
@@ -28,3 +31,6 @@
   .detailBtnGroup .editBtn {
     margin-top: 5%;
     margin-bottom: 2%; }
+
+.deleteAll {
+  margin-top: 20px; }

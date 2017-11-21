@@ -1,5 +1,11 @@
+@import 'colors';
+
+.searchbar {
+  margin-bottom: 15px;
+}
+
 .contact-card {
-   border: 2px solid lightgrey;
+   border: 2px solid $light;
    border-radius: 10px;
    height: 225px;
    position: relative;
@@ -20,7 +26,7 @@
 
 .detail-card {
     margin: 25px;
-    border: 2px solid darkgrey;
+    border: 2px solid $dark;
     border-radius: 10px;
 }
 
@@ -40,3 +46,6 @@
   }
 }
 
+.deleteAll {
+  margin-top: 20px;
+}
