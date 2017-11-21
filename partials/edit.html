@@ -1,6 +1,5 @@
 <div>
 
-<<<<<<< HEAD
   <div id='edit'>
     <h1 class='text-center'>Edit Contact</h1>
 
@@ -42,22 +41,6 @@
       <button type="submit" class="btn btn-primary btn-lg btn-block " ng-click="editSubmit(contact)" ng-disabled="editContactForm.$invalid">Submit Changes</button>
     </form>
 
-=======
-  <div class="col-xs-4">
-    <img class="poster_path" ng-src="{{image_url}}/w342/{{movie.poster_path}}" alt="">
-  </div>
-  <div class="col-xs-8">
-    <h3>{{movie.title}}</h3>
-    <p>{{movie.overview}}</p>
-
-    <p ng-if="movie.isWatched">
-      Rating:
-      <star-rating-comp rating="movie.rating" size="'large'" num-of-stars="5" on-click="starChange($event, movie)"><img src="../assets/images/star-rating.icons.svg"></star-rating-comp>
-    </p>
-    <p ng-if="!movie.isWatched">
-      <button class="btn btn-default" ng-click="switchWatched(movie)">I watched it!</button>
-    </p>
->>>>>>> master
   </div>
 
 </div>

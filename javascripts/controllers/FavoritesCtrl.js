@@ -1,10 +1,7 @@
 'use strict';
 
-<<<<<<< HEAD
 app.controller("FavoritesCtrl", function ($location, $rootScope, $scope, ContactService) {
-=======
-app.controller("FavoritesCtrl", function ($rootScope, $scope, ContactService) {
->>>>>>> master
+
 
   const getContacts = () => {
     ContactService.getFavoriteContacts($rootScope.uid).then((results) => {
@@ -16,10 +13,6 @@ app.controller("FavoritesCtrl", function ($rootScope, $scope, ContactService) {
 
   getContacts();
 
-<<<<<<< HEAD
-=======
-
->>>>>>> master
   $scope.deleteContact = (contactId) => {
     ContactService.deleteContact(contactId).then((result) => {
       getContacts();
@@ -38,7 +31,7 @@ app.controller("FavoritesCtrl", function ($rootScope, $scope, ContactService) {
     });
   };
 
-<<<<<<< HEAD
+
   $scope.contactDetail = (contactId) => {
     $location.path(`/contacts/details/${contactId}`);
   };
@@ -46,8 +39,6 @@ app.controller("FavoritesCtrl", function ($rootScope, $scope, ContactService) {
   $scope.contactEdit = (contactId) => {
     $location.path(`/contacts/edit/${contactId}`);
   };
-=======
-  return { getContacts };
->>>>>>> master
+
 
 });
