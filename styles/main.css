@@ -1,7 +1,6 @@
 .contact-card {
   border: 2px solid lightgrey;
   border-radius: 10px;
-<<<<<<< HEAD
   height: 225px;
   position: relative; }
   .contact-card .caption {
@@ -29,6 +28,3 @@
   .detailBtnGroup .editBtn {
     margin-top: 5%;
     margin-bottom: 2%; }
-=======
-  height: 225px; }
->>>>>>> master
