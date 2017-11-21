@@ -1,5 +1,6 @@
 'use strict';
 
+
 app.controller("FavoritesCtrl", function ($location, $rootScope, $scope, ContactService) {
 
   const getContacts = () => {

@@ -8,6 +8,7 @@
       "email": "wammber15@gmail.com",
       "birthday": "7/26/1990",
       "website": "http://www.therealamberstuart.me",
+      "favorite": true,
       "uid": "TabZzHDzE2YSCaBQY8U4xOocdEJ3"
     },
     "contact1": {
@@ -18,6 +19,7 @@
       "email": "puggy.doge@bark.edu",
       "birthday": "6/16/2013",
       "website": "http://www.puggyisagoodgirl.org",
+      "favorite": true,
       "uid": "TabZzHDzE2YSCaBQY8U4xOocdEJ3"
     },
     "contact2": {
@@ -28,6 +30,7 @@
       "email": "leavemealonetrump2017@gmail.com",
       "birthday": "10/26/1947",
       "website": "http://www.hillaryclinton.com",
+      "favorite": true,
       "uid": "TabZzHDzE2YSCaBQY8U4xOocdEJ3"
     },
     "contact3": {
@@ -38,6 +41,7 @@
       "email": "therealgordonramsay@hotmail.com",
       "birthday": "11/8/1966",
       "website": "http://www.gordonramsay.com",
+      "favorite": false,
       "uid": "TabZzHDzE2YSCaBQY8U4xOocdEJ3"
     },
     "contact4": {
@@ -48,6 +52,7 @@
       "email": "larryisamoron@aol.com",
       "birthday": "7/2/1947",
       "website": "https://en.wikipedia.org/wiki/Larry_David",
+      "favorite": false,
       "uid": "TabZzHDzE2YSCaBQY8U4xOocdEJ3"
     },
     "contact5": {
@@ -58,6 +63,7 @@
       "email": "iambillyray@bellsouth.com",
       "birthday": "8/25/1961",
       "website": "http://www.billyraycyrus.com",
+      "favorite": false,
       "uid": "TabZzHDzE2YSCaBQY8U4xOocdEJ3"
     },
     "contact6": {
@@ -68,6 +74,7 @@
       "email": "ihavebighair@outlook.com",
       "birthday": "11/3/1987",
       "website": "http://kaepernick7.com/",
+      "favorite": false,
       "uid": "TabZzHDzE2YSCaBQY8U4xOocdEJ3"
     },
     "contact7": {
@@ -78,6 +85,7 @@
       "email": "iwontkillyouipromise@jk.com",
       "birthday": "11/24/1946",
       "website": "https://en.wikipedia.org/wiki/Ted_Bundy",
+      "favorite": false,
       "uid": "TabZzHDzE2YSCaBQY8U4xOocdEJ3"
     },
     "contact8": {
@@ -88,6 +96,7 @@
       "email": "therealjerry@jerry.jer",
       "birthday": "4/26/1954",
       "website": "http://jerryseinfeld.com/",
+      "favorite": false,
       "uid": "TabZzHDzE2YSCaBQY8U4xOocdEJ3"
     },
     "contact9": {
@@ -98,6 +107,7 @@
       "email": "iloveyousomuchjake@hottie.edu",
       "birthday": "12/19/1980",
       "website": "https://en.wikipedia.org/wiki/Jake_Gyllenhaal",
+      "favorite": false,
       "uid": "TabZzHDzE2YSCaBQY8U4xOocdEJ3"
     }
   }

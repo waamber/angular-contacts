@@ -4,6 +4,7 @@
 .contact-card {
   border: 2px solid lightgrey;
   border-radius: 10px;
+<<<<<<< HEAD
   height: 225px;
   position: relative; }
   .contact-card .caption {
@@ -34,3 +35,6 @@
 
 .deleteAll {
   margin-top: 20px; }
+=======
+  height: 225px; }
+>>>>>>> master

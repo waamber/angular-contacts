@@ -22,7 +22,6 @@ app.controller("ViewCtrl", function ($location, $rootScope, $scope, $window, Con
     });
   };
 
-
   $scope.deleteAll = () => {
     ContactService.deleteAllContacts().then(() => {
       getContacts();
