@@ -4,13 +4,12 @@ app.controller("NewCtrl", function ($location, $rootScope, $scope, ContactServic
 
   $scope.submit = function () {
     let newContact = $scope.user;
-    newContact.uid = $rootScope.uid;
-    newContact.favorite = false;
+    $scope.user.uid = $rootScope.uid;
     ContactService.postNewContact(newContact).then(() => {
       $location.path('contacts/view');
-
     }).catch((error) => {
       console.log("Error in submit", error);
     });
   };
+
 });

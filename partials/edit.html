@@ -1,19 +1,46 @@
 <div>
 
-  <div class="col-xs-4">
-    <img class="poster_path" ng-src="{{image_url}}/w342/{{movie.poster_path}}" alt="">
-  </div>
-  <div class="col-xs-8">
-    <h3>{{movie.title}}</h3>
-    <p>{{movie.overview}}</p>
+  <div id='edit'>
+    <h1 class='text-center'>Edit Contact</h1>
 
-    <p ng-if="movie.isWatched">
-      Rating:
-      <star-rating-comp rating="movie.rating" size="'large'" num-of-stars="5" on-click="starChange($event, movie)"><img src="../assets/images/star-rating.icons.svg"></star-rating-comp>
-    </p>
-    <p ng-if="!movie.isWatched">
-      <button class="btn btn-default" ng-click="switchWatched(movie)">I watched it!</button>
-    </p>
+    <form name="editContactForm">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="name" class="form-control" id="firstNameInput" ng-model="contact.firstName" ng-required="true">
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="name" class="form-control" id="lastNameInput" ng-model="contact.lastName" ng-required="true">
+      </div>
+
+      <div class="form-group" ng-validate="required">
+        <label for="address">Address</label>
+        <input type="address" class="form-control" id="addressInput" ng-model="contact.address" ng-required="true">
+      </div>
+
+      <div class="form-group" ng-validate="required">
+        <label for="phone">Phone</label>
+        <input type="phone" class="form-control" id="phoneInput" ng-model="contact.phoneNumber" ng-required="true">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="emailInput" ng-model="contact.email" ng-required="true">
+      </div>
+
+      <div class=" form-group">
+        <label for="birthday">Birthday</label>
+        <input type="birthday" class="form-control" id="birthdayInput" ng-model="contact.birthday" ng-required="true">
+      </div>
+
+      <div class="form-group">
+        <label for="website">Website</label>
+        <input type="website" class="form-control" id="websiteInput" ng-model="contact.website" ng-required="true">
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg btn-block " ng-click="editSubmit(contact)" ng-disabled="editContactForm.$invalid">Submit Changes</button>
+    </form>
+
   </div>
 
 </div>

@@ -1,4 +1,30 @@
 .contact-card {
   border: 2px solid lightgrey;
   border-radius: 10px;
-  height: 225px; }
+  height: 225px;
+  position: relative; }
+  .contact-card .caption {
+    margin: 5px; }
+  .contact-card .name {
+    margin-bottom: 5px; }
+
+#details {
+  margin-left: 25%;
+  margin-top: 5%; }
+
+.detail-card {
+  margin: 25px;
+  border: 2px solid darkgrey;
+  border-radius: 10px; }
+
+.btnGroup {
+  position: absolute;
+  bottom: 0;
+  margin: 5px;
+  margin-left: 60px; }
+
+.detailBtnGroup {
+  padding-left: 15%; }
+  .detailBtnGroup .editBtn {
+    margin-top: 5%;
+    margin-bottom: 2%; }

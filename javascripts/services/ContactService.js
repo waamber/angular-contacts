@@ -62,9 +62,10 @@ app.service("ContactService", function ($http, $q, $rootScope, FIREBASE_CONFIG) 
     };
   };
 
-  // const getSingleContact = (contactId) => {
-  //   return $http.get(`${FIREBASE_CONFIG.databaseURL}/contacts/${contactId}.json`);
-  // };
+  const getSingleContact = (contactId) => {
+    return $http.get(`${FIREBASE_CONFIG.databaseURL}/contacts/${contactId}.json`);
+  };
 
-  return { createContactObject, getFavoriteContacts, getSavedContacts, deleteContact, postNewContact, updateContact };
+  return { createContactObject, getSingleContact, getFavoriteContacts, getSavedContacts, deleteContact, postNewContact, updateContact };
 });
+
