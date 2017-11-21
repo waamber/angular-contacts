@@ -1,7 +1,27 @@
 'use strict';
 
-app.run(function (FIREBASE_CONFIG) {
+let isAuth = (AuthService) => new Promise((resolve, reject) => {
+  if (AuthService.isAuthenticated()) {
+    resolve();
+  } else {
+    reject();
+  }
+});
+
+app.run(function ($location, $rootScope, AuthService, FIREBASE_CONFIG) {
   firebase.initializeApp(FIREBASE_CONFIG);
+
+  $rootScope.$on('$routeChangeStart', function (event, currRoute, prevRoute) {
+    const logged = AuthService.isAuthenticated();
+    let appTo;
+    if (currRoute.originalPath) {
+      appTo = currRoute.originalPath.indexOf('/login') !== -1;
+    }
+    if (!appTo && !logged) {
+      event.preventDefault();
+      $location.path('/login');
+    }
+  });
 });
 
 //cannot run own code in app.config
