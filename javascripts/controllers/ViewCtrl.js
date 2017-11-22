@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller("ViewCtrl", function ($location, $rootScope, $scope, ContactService) {
+app.controller("ViewCtrl", function ($location, $rootScope, $scope, $window, ContactService) {
 
   $scope.contacts = [];
 
@@ -22,6 +22,15 @@ app.controller("ViewCtrl", function ($location, $rootScope, $scope, ContactServi
     });
   };
 
+  $scope.deleteAll = () => {
+    ContactService.deleteAllContacts().then(() => {
+      getContacts();
+      $window.alert("YOU HAVE NO FRIENDS");
+    }).catch((error) => {
+      console.log("Error in deleteAll", error);
+    });
+  };
+
   $scope.switchToFavorite = (contact) => {
     contact.favorite = true;
     let updatedContact = ContactService.createContactObject(contact);
@@ -31,7 +40,6 @@ app.controller("ViewCtrl", function ($location, $rootScope, $scope, ContactServi
       console.log("Error in switchWatched", error);
     });
   };
-
 
   $scope.switchToUnfavorite = (contact) => {
     contact.favorite = false;

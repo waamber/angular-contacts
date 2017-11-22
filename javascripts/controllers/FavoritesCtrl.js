@@ -2,7 +2,6 @@
 
 app.controller("FavoritesCtrl", function ($location, $rootScope, $scope, ContactService) {
 
-
   const getContacts = () => {
     ContactService.getFavoriteContacts($rootScope.uid).then((results) => {
       $scope.contacts = results;
@@ -31,7 +30,6 @@ app.controller("FavoritesCtrl", function ($location, $rootScope, $scope, Contact
     });
   };
 
-
   $scope.contactDetail = (contactId) => {
     $location.path(`/contacts/details/${contactId}`);
   };
@@ -39,6 +37,5 @@ app.controller("FavoritesCtrl", function ($location, $rootScope, $scope, Contact
   $scope.contactEdit = (contactId) => {
     $location.path(`/contacts/edit/${contactId}`);
   };
-
 
 });
